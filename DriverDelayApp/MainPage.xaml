@@ -1,0 +1,16 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourAppName.MainPage">
+    <StackLayout Margin="20">
+        <Label Text="Arrived:"/>
+        <TimePicker x:Name="arrivedTimePicker"/>
+        <Label Text="Departed:"/>
+        <TimePicker x:Name="departedTimePicker"/>
+        <Label Text="Paid (in minutes):"/>
+        <Entry x:Name="paidEntry" Keyboard="Numeric"/>
+        <Button Text="Add Stop" Clicked="OnAddStopClicked"/>
+        <Button Text="Remove Stop" Clicked="OnRemoveStopClicked"/>
+        <Label Text="Total Time Delayed:"/>
+        <Label x:Name="totalTimeLabel" FontSize="20" FontAttributes="Bold"/>
+    </StackLayout>
+</ContentPage>
